@@ -1,43 +1,73 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amruth S Sharma- Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header class="fade-in">
+      <h1>Amruth S</h1>
+      <p>Email: <a href="mailto:amruths604@gmail.com">amruths604@gmail.com</a> | 📞 8050495260 | 📍 Bangalore, India</p>
+    </header>
 
-{% block content %}
-<section>
-    <h2>Summary</h2>
-    <p>Enthusiastic student with excellent skills in team-based and independent settings. Strong work ethic and organizational skills. Passionate about IT and social media.</p>
-</section>
+    <main>
+      <section class="card slide-in">
+        <h2>👨‍💻 Professional Summary</h2>
+        <p>Motivated and detail-oriented Computer Science undergraduate with skills in software development, web technologies, and machine learning. Passionate about solving real-world problems using technology.</p>
+      </section>
 
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Software Development</li>
-        <li>Machine Learning</li>
-        <li>Data Analysis</li>
-        <li>Web Development</li>
-        <li>Project Management</li>
-        <li>Python Programming</li>
-        <li>Git</li>
-    </ul>
-</section>
+      <section class="card slide-in">
+        <h2>🛠️ Skills</h2>
+        <ul class="skills-grid">
+          <li>Software Development</li>
+          <li>Machine Learning</li>
+          <li>Data Analysis</li>
+          <li>Web Development</li>
+          <li>Python Programming</li>
+          <li>Git</li>
+          <li>Project Management</li>
+        </ul>
+      </section>
 
-<section>
-    <h2>Experience</h2>
-    <p><strong>Amruth S Sharma | Student (04/2022 - 04/2026)</strong></p>
-    <ul>
-        <li>Completed broad coursework</li>
-        <li>Implemented new opportunity strategies</li>
-        <li>Academic writing and research</li>
-        <li>Perfect attendance</li>
-        <li>Workshops and seminars participation</li>
-    </ul>
-</section>
+      <section class="card slide-in">
+        <h2>💼 Experience</h2>
+        <h3>Student @ Sai Vidya Institute of Technology (04/2022 – 04/2026)</h3>
+        <ul>
+          <li>Completed broad coursework</li>
+          <li>Implemented opportunity strategies</li>
+          <li>Academic writing and research</li>
+          <li>Perfect attendance</li>
+          <li>Workshops and seminars</li>
+        </ul>
+      </section>
 
-<section>
-    <h2>Education</h2>
-    <p>Bachelor of Engineering in Computer Science<br>Sai Vidya Institute of Technology, Bangalore<br><em>Expected: 09/2026</em></p>
-</section>
+      <section class="card slide-in">
+        <h2>🎓 Education</h2>
+        <p><strong>Bachelor of Engineering in Computer Science</strong><br>
+          Sai Vidya Institute of Technology, Bangalore<br>
+          <em>Expected: September 2026</em></p>
+      </section>
 
-<section>
-    <h2>Languages</h2>
-    <p>English: First Language</p>
-</section>
-{% endblock %}
+      <section class="card slide-in">
+        <h2>📂 Projects</h2>
+        <ul>
+          <li><strong>Portfolio Website:</strong> Built using Flask, HTML/CSS, and animations.</li>
+          <li><strong>Anomaly Detection (optional):</strong> Real-time surveillance system using machine learning.</li>
+        </ul>
+      </section>
+
+      <section class="card slide-in">
+        <h2>🌐 Languages</h2>
+        <p>English – Native Proficiency</p>
+      </section>
+    </main>
+
+    <footer class="fade-in">
+      <p>© 2025 Amruth S | Built with ❤️ and Flask</p>
+    </footer>
+  </div>
+</body>
+</html>

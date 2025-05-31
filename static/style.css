@@ -1,22 +1,98 @@
+/* Base styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 800px;
-    background: #f9f9f9;
-    color: #333;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f9f9f9, #e8f0ff);
+  color: #333;
 }
-header {
-    text-align: center;
-    padding-bottom: 20px;
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
+
+/* Header & Footer */
+header, footer {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 h1 {
-    font-size: 2.5em;
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 5px;
 }
-section {
-    margin-bottom: 30px;
+
+header p, footer p {
+  font-size: 0.95rem;
+  color: #555;
 }
-ul {
-    list-style-type: square;
-    padding-left: 20px;
+
+/* Cards for each section */
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Titles */
+h2 {
+  color: #003366;
+  margin-top: 0;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-grid li {
+  background-color: #edf4ff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Links */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in {
+  animation: slideIn 1s ease-in-out;
 }
